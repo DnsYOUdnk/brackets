@@ -13,7 +13,7 @@ module.exports = function check(str, bracketsConfig) {
     arr.forEach(item => {
         if (resultStr.includes(item)) {
           statusBrackets += '1';
-          resultStr = resultStr.replaceAll(item, '')
+          resultStr = resultStr.replace(item, '')
       } else {
           statusBrackets += '';
       }      
